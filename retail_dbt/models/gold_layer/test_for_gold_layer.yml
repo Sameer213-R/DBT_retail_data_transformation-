@@ -1,0 +1,18 @@
+version: 2
+models:
+    - name : fact_table
+      columns:
+        - name : order_item_id
+          tests:
+            - not_null
+            - unique
+
+        - name: total_cost
+          tests:
+            - positive_test:
+                config:
+                    severity: warn 
+
+
+
+

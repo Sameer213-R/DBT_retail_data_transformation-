@@ -1,0 +1,58 @@
+version: 2
+
+sources:
+    - name : retail_dbt
+      description: "data from databricks catlog "
+      schema: bronze
+
+      tables:
+            - name: customers_bronze
+              description: "Raw customer master data"
+
+
+
+            - name: products_bronze
+
+              description: "Raw product master data"
+
+
+
+            - name: categories_bronze
+
+              description: "Raw product categories"
+
+
+
+            - name: stores_bronze
+
+              description: "Raw store master"
+
+
+
+            - name: suppliers_bronze
+
+              description: "Raw supplier data"
+
+
+
+            - name: inventory_bronze
+
+              description: "Raw inventory data"
+
+
+
+            - name: orders_bronze
+
+              description: "Daily order transactions"
+
+
+
+            - name: order_items_bronze
+
+              description: "Daily order item transactions"
+
+
+
+            - name: payments_bronze
+
+              description: "Daily payment transactions" 

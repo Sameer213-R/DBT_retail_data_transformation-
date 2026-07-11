@@ -1,0 +1,8 @@
+select 
+customer_id,
+customer_name,
+email,
+city
+ from 
+ {{ ref('customer_silver') }}
+ 
